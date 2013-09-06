@@ -1,0 +1,54 @@
+<html> 
+<!DOCTYPE html>
+<head>
+<title> BMI via Javascript</title>
+<meta http-equiv="Content-Type" content="application/x-web-app-manifest+json; charset=UTF-8">
+<script type="text/javascript">
+function bmi()
+{
+var x=document.getElementById("bmiform");
+var h=x.elements[0].value;
+var w=x.elements[1].value;
+var bmi;
+bmi=w/(h*h/10000)
+if (bmi>30)
+{
+	answ="Obese"
+}
+else if(bmi<30 && bmi>25)
+{
+	answ="Over-weight"
+}
+else if(bmi>18 && bmi<25)
+{
+	answ="Normo-weight"
+}
+else
+{
+	answ="Under-weight"
+}
+document.getElementById("data1").innerHTML=("height= " + h + " cm");
+document.getElementById("data2").innerHTML=("weight= " + w  + " Kg");
+document.getElementById("answer").innerHTML=("BMI= " + bmi);
+document.getElementById("data3").innerHTML=("Your are " + answ);
+
+}
+</script>
+</head>
+
+<body>
+<h1> Calculate your BMI </h1>
+<form id="bmiform"> 
+Your height in cm <input type="float" name="h" value=170 > <br>
+Your weight in Kg <input type="float" name="w" value=65 > <br>
+</form>
+<button onclick="bmi()">Calculate BMI</button> <br />
+
+<h2> Results </h2>
+<p id="data1"> </p>
+<p id="data2"> </p>
+<p id="answer"> </p>
+<p id="data3"> </p>
+
+</body>
+</html>

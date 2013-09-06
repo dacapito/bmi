@@ -1,0 +1,13 @@
+{
+    "name": "BMI App",
+    "description": "A simple web app",
+    "launch_path": "/francesco.dacapito/FIREFOX-OS/bmi/",
+    "icons": {
+        "128": "/francesco.dacapito/FIREFOX-OS/bmi/style/icons/bmi.png"
+    },
+    "developer": {
+        "name": "DacApp",
+        "url": "http://perso.numericable.fr/francesco.dacapito/"
+    },
+    "default_locale": "en"
+}
